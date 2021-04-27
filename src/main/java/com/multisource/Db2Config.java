@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories(entityManagerFactoryRef = "barEntityManagerFactory",
     transactionManagerRef = "barTransactionManager", basePackages = {"com.multisource.db2.repo"})
-public class BarDbConfig {
+public class Db2Config {
 
   @Bean(name = "barDataSource")
   @ConfigurationProperties(prefix = "db2.datasource")
